@@ -24,6 +24,7 @@ class vect
     const vect& operator= (const vect & v);
 
     double& operator[] (int i);
+	const double& operator[] (int i) const;
 
     double vect_len() const;
 

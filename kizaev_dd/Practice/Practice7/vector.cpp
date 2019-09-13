@@ -105,6 +105,13 @@ double& vect::operator[] (int i)
     return coord[i];
 }
 
+const double& vect::operator[] (int i) const
+{
+	if ((i < 0) || (i >= dim))
+		throw "[] error: wrong coordinate";
+	return coord[i];
+}
+
 double vect::vect_len() const
 {
     double vect_len = 0.0;
