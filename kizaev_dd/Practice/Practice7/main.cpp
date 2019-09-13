@@ -102,6 +102,11 @@ int main()
     }
     cout << "v2" << endl;
     v2.vect_print();
+
+	cout << "stream input: v2" << endl;
+	cin >> v2;
+	cout << endl << "stream output: v2"<< endl << v2 << endl;
+
 	cout << "success" << endl;
     cin >> eof;   
     return 0;
